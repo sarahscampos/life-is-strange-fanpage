@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Life is Strange";
+  src: url(../assets/fonts/Dudu_Calligraphy.ttf);
+}
+
+:root {
+  --cursor-pointer: url('../assets/imgs/cursor/normalselect.png'), pointer;
+}
+
+body {
+  font-family: "Life is Strange", sans-serif;
+  font-size: 1.5rem;
+  cursor: url('../assets/imgs/cursor/hand-black.png'), default;
+  
+  background-color: #EDEADB;
+  color: white;
+}
+
+.language-selection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: right;
+  font-size: 1.3rem;
+  background-color: #121212;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  cursor: url('../assets/imgs/cursor/hand-white.png'), auto;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+  transition: transform 1s;
+  cursor: var(--cursor-pointer);
+}
+
+.language-option:hover {
+  animation: mouse-hover 1s infinite;
+}
+
+.navigation {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: white;
+  align-items: center;
+}
+
+.navigation__logo {
+  width: 150px;
+  height: 30px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation-list li a {
+  text-decoration: none;
+  color: black;
+  cursor: var(--cursor-pointer);
+}
+
+.navigation-list li:hover {
+  animation: mouse-hover 1s infinite;
+}
+
+
+
+@keyframes mouse-hover {
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+    transform: scale(103%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+
+  
+}
+
