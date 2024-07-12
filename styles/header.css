@@ -87,3 +87,14 @@ body {
   
 }
 
+/*Scroll Animação*/
+.rewind {
+  margin: 1rem;
+  width: 100px;
+  position: fixed;
+  top: 0;
+}
+
+.rewind path {
+  stroke: #0F0F0F;
+}
