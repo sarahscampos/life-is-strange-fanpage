@@ -1,0 +1,124 @@
+.music-container {
+  background-color: #471D22;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px 0 rgba(54, 54, 54, 0.6);
+  display: flex;
+  padding: 20px 20px;
+  position: fixed;
+  bottom: .5rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.img-container {
+  width: 100px; 
+  position: relative; 
+  margin: 0rem 1rem;
+}
+
+.img-container::after {
+  content: '';
+  background-color: #471D22;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  border-radius: 50%;
+  border: 1px solid white;
+  transform: translate(-40%, -65%);
+}
+
+.img-container img {
+  width: inherit;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 2px solid white;
+
+  animation: rotate 10s linear infinite;
+
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+.navigation-music {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: #471D22;
+  border: 0;
+  cursor: var(--cursor-pointer);
+  padding: 5px;
+}
+
+.action-btn.action-btn-big img{
+  width: 40px;  
+}
+
+.action-btn img {
+  width: 30px;
+}
+
+.music-info {
+  background-color: #471d2286;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 10px 10px 20px 100px;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform .2s ease-in, opacity .2s ease-in;
+
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.progress-container {
+  background-color: white;
+  border-radius: 5px;
+  cursor: var(--cursor-pointer);
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #471D22;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}

@@ -13,7 +13,7 @@ body {
   cursor: url('../assets/imgs/cursor/hand-black.png'), default;
   
   background-color: #EDEADB;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .language-selection {
