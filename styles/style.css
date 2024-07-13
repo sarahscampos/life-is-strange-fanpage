@@ -1,6 +1,4 @@
 @import 'header.css';
 @import 'music-player.css';
+@import 'about-lis.css';
 
-p.teste {
-  font-size: 5rem;
-}

@@ -13,7 +13,7 @@ export default function initPlayerMusic() {
   const cover = document.querySelector('#cover');
 
   //song titles
-  const songs = ['To All Of You', 'Spanish Sahara', 'Obstacles', 'Santa Monica Dream', 'Local Natives'];
+  const songs = ['To All of You', 'Spanish Sahara', 'Obstacles', 'Santa Monica Dream', 'Local Natives'];
 
   //keep track of songs
   let songIndex = 0;
