@@ -8,6 +8,7 @@
   bottom: .5rem;
   right: 1rem;
   z-index: 10;
+  border: 2px solid white;
 }
 
 .img-container {
@@ -84,6 +85,7 @@
   background-color: #471d2286;
   color: white;
   border-radius: 15px 15px 0 0;
+  border: 1px solid #471D22;
   position: absolute;
   top: 0;
   left: 20px;
