@@ -22,6 +22,7 @@
 .slider-wrapper .swiper-slide-button {
   color: black;
   transition: 0.2s ease;
+  cursor: var(--cursor-pointer);
 }
 
 .slider-wrapper .swiper-slide-button:hover {
