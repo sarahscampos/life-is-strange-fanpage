@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card-list {
+  display: flex;
+  text-align: center;
+}
+
+.slider-wrapper {
+  overflow: hidden; 
+  margin: 0 100px; 
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: black;
+  height: 10px;
+  width: 10px;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: black;
+  transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 920px) {
+  .slider-wrapper .swiper-slide-button{
+    display: none;
+  }
+}

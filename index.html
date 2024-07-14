@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life is Strange</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -26,7 +27,7 @@
       <img src="assets/imgs/lis-logo.png" alt="Life is Strange logo" draggable="false" class="navigation__logo">
       <ul class="navigation-list">
           <li><a href="#about">About LIS</a></li>
-          <li><a href="">Characters</a></li>
+          <li><a href="#characters">Characters</a></li>
           <li><a href="">Image gallery</a></li>
           <li><a href="">Trailers</a></li>
           <li><a href="">Episodes</a></li>
@@ -60,6 +61,68 @@
       </div>
     </section>
 
+    <section id="characters">
+      <h1>Characters</h1>
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/max.png" alt="Max Caulfield">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/chloe.png" alt="Chloe Price">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/rachel.png" alt="Rachel Amber">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/mark.png" alt="Mark Jefferson">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/frank.png" alt="Frank Bowers">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/nathan.png" alt="Nathan Prescott">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/victoria.png" alt="Victoria Chase">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/warren.png" alt="Warren Graham">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/kate.png" alt="Kate Marsh">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/william.png" alt="William Price">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/joyce.png" alt="Joyce Price">
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="assets/imgs/characters/david.png" alt="David Madsen">
+            </div>
+
+            
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
   </main>
   
 
@@ -91,7 +154,7 @@
     </div>
   </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="scripts/script.js" module></script>
 </body>
 </html>
