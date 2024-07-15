@@ -1,0 +1,14 @@
+.container-gallery {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.container-gallery .image-container {
+  columns: 3 250px;
+  gap: 15px; 
+}
+
+.container-gallery .image-container img {
+  padding-bottom: 10px;  
+  width: 100%;
+}
