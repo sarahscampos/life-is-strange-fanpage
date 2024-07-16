@@ -1,0 +1,11 @@
+.trailers-container {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.trailers-container iframe {
+  border-radius: 5px;
+}
