@@ -16,7 +16,9 @@ export default function initTranslations() {
       about2: '"Life Is Strange: Double Exposure" é a emocionante continuação da história de Max Caulfield. Max, a talentosa fotógrafa da conceituada Universidade Caledon, fica arrasada ao descobrir que sua amiga Safi foi assassinada na neve. Numa tentativa desesperada de salvá-la, Max tenta voltar no tempo. No entanto, sem usar seu poder há anos, ela inadvertidamente abre um portal para uma linha do tempo alternativa onde Safi ainda está viva, mas enfrenta um perigo iminente.',
       about3: 'À medida que Max navega nesta nova realidade, ela percebe que o assassino está planejando atacar novamente em ambos os mundos, iniciando uma emocionante corrida contra o tempo para deter o assassino e salvar sua amiga.',
       charactersTitle: 'Personagens',
-      galleryTitle: 'Galeria de imagens'
+      galleryTitle: 'Galeria de imagens',
+      episodesTitle: 'Episódios',
+      notReleased: 'Ainda não lançado (╥‸╥)', 
     },
   
     en: {
@@ -35,7 +37,9 @@ export default function initTranslations() {
       about2: '"Life Is Strange: Double Exposure" is the thrilling continuation of Max Caulfield\'s story. Max, the talented photographer at the esteemed Caledon University, is shattered when she discovers her friend Safi murdered in the snow. In a desperate bid to save her, Max attempts to rewind time. However, having not used her power in years, she inadvertently opens a portal to an alternate timeline where Safi is still alive but facing imminent danger.',
       about3: 'As Max navigates this new reality, she realizes that the murderer is planning to strike again in both worlds, setting off a thrilling race against time to stop the killer and save her friend.',
       charactersTitle: 'Characters',
-      galleryTitle: 'Image gallery'
+      galleryTitle: 'Image gallery',
+      episodesTitle: 'Episodes',
+      notReleased: 'Not released yet (╥‸╥)', 
     }
   }
   
@@ -49,6 +53,8 @@ export default function initTranslations() {
   let aboutTexts = document.querySelectorAll("#about .texts p");
   let charactersTitle = document.querySelector('#characters h1');
   let galleryTitle = document.querySelector('#gallery h1');
+  let episodesTitle = document.querySelector('#episodes h1');
+  let notReleased = document.getElementById("not-released");
   
   
   languageSelectOp.forEach(option => {
@@ -71,6 +77,8 @@ export default function initTranslations() {
       aboutTitle.innerText = translations.pt.aboutTitle;
       charactersTitle.innerText = translations.pt.charactersTitle;
       galleryTitle.innerText = translations.pt.galleryTitle;
+      episodesTitle.innerText = translations.pt.episodesTitle;
+      notReleased.innerText = translations.pt.notReleased;
     }
     else if(language == "language-option-en") {
       languageSelector.innerText = translations.en.languageSelector;
@@ -85,6 +93,8 @@ export default function initTranslations() {
       aboutTitle.innerText = translations.en.aboutTitle;
       charactersTitle.innerText = translations.en.charactersTitle;
       galleryTitle.innerText = translations.en.galleryTitle;
+      episodesTitle.innerText = translations.en.episodesTitle;
+      notReleased.innerText = translations.en.notReleased;
     }
   }
 }
