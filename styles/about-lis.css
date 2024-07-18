@@ -26,3 +26,9 @@ h1 {
 
   padding-bottom: 1.5rem;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}

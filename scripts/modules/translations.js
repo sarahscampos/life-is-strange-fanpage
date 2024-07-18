@@ -9,7 +9,6 @@ export default function initTranslations() {
       navigationList2: "Galeria de imagens",
       navigationList3: "Trailers",
       navigationList4: "Episódios",
-      navigationList5: "Contato",
       aboutTitle: "Sobre Life is Strange",
       about0: '"Life Is Strange" se passa na cidade fictícia de Arcadia Bay, Oregon, durante a semana de 7 de outubro de 2013. A história é contada através dos olhos de Maxine Caulfield, uma estudante de fotografia que descobre que tem a habilidade de voltar no tempo à vontade. Este novo poder significa que cada escolha que ela faz cria um efeito borboleta. Quando Max prevê a chegada de uma tempestade devastadora, ela assume a responsabilidade de evitar que sua cidade seja destruída.',
       about1: 'As ações do jogador moldam a narrativa à medida que ela avança. Missões secundárias e mudanças ambientais servem como quebra-cabeças, e um sistema de diálogo ramificado enriquece as interações com outros personagens.',
@@ -19,6 +18,8 @@ export default function initTranslations() {
       galleryTitle: 'Galeria de imagens',
       episodesTitle: 'Episódios',
       notReleased: 'Ainda não lançado (╥‸╥)', 
+      footerCredits: 'Página de fã não oficial de Life is Strange. Todos os direitos reservados à Dontnod Entertainment, Deck Nine Games e Square Enix.',
+      myMedia: 'Feito por Sarah Campos',
     },
   
     en: {
@@ -30,7 +31,6 @@ export default function initTranslations() {
       navigationList2: "Image gallery",
       navigationList3: "Trailers",
       navigationList4: "Episodes",
-      navigationList5: "Contact",
       aboutTitle: "About Life is Strange",
       about0: '"Life Is Strange" unfolds in the fictional town of Arcadia Bay, Oregon, during the week of October 7, 2013. The story is told through the eyes of Maxine Caulfield, a photography student who discovers she has the ability to rewind time at will. This newfound power means that every choice she makes creates a butterfly effect. When Max foresees the arrival of a devastating storm, she takes it upon herself to prevent her town from being destroyed.',
       about1: 'The player\'s actions shape the narrative as it progresses. Side missions and environmental changes serve as puzzles, and a branching dialogue system enriches interactions with other characters.',
@@ -40,6 +40,8 @@ export default function initTranslations() {
       galleryTitle: 'Image gallery',
       episodesTitle: 'Episodes',
       notReleased: 'Not released yet (╥‸╥)', 
+      footerCredits: 'Unofficial fanpage of Life is Strange. All rights reserved to Dontnod Entertainment, Deck Nine Games and Square Enix.',
+      myMedia: 'Made by Sarah Campos',
     }
   }
   
@@ -55,7 +57,8 @@ export default function initTranslations() {
   let galleryTitle = document.querySelector('#gallery h1');
   let episodesTitle = document.querySelector('#episodes h1');
   let notReleased = document.getElementById("not-released");
-  
+  let credits = document.querySelector('footer p');
+  let media = document.querySelector('footer .social p');
   
   languageSelectOp.forEach(option => {
     option.addEventListener("click", (event) => {
@@ -79,6 +82,8 @@ export default function initTranslations() {
       galleryTitle.innerText = translations.pt.galleryTitle;
       episodesTitle.innerText = translations.pt.episodesTitle;
       notReleased.innerText = translations.pt.notReleased;
+      credits.innerText = translations.pt.footerCredits;
+      media.innerText = translations.pt.myMedia;
     }
     else if(language == "language-option-en") {
       languageSelector.innerText = translations.en.languageSelector;
@@ -95,6 +100,8 @@ export default function initTranslations() {
       galleryTitle.innerText = translations.en.galleryTitle;
       episodesTitle.innerText = translations.en.episodesTitle;
       notReleased.innerText = translations.en.notReleased;
+      credits.innerText = translations.en.footerCredits;
+      media.innerText = translations.en.myMedia;
     }
   }
 }

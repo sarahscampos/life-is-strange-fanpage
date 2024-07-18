@@ -7,6 +7,11 @@
   --cursor-pointer: url('../assets/imgs/cursor/normalselect.png'), pointer;
 }
 
+::selection {
+  background-color: white;
+}
+
+
 body {
   font-family: "Life is Strange", sans-serif;
   font-size: 1.5rem;

@@ -16,3 +16,7 @@
 .games li {
   padding-bottom: 1rem;  
 }
+
+.games li:last-child {
+  padding-bottom: 14rem;
+}
