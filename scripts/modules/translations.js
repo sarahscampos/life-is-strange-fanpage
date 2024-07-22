@@ -51,6 +51,7 @@ export default function initTranslations() {
   let languageOptionPt = document.getElementById("language-option-pt");
   let languageOptionEn = document.getElementById("language-option-en");
   let navigationListItems = document.querySelectorAll(".navigation-list a");
+  let navigationListItemsHam = document.querySelectorAll(".off-screen-menu a");
   let aboutTitle = document.querySelector('#about h1');
   let aboutTexts = document.querySelectorAll("#about .texts p");
   let charactersTitle = document.querySelector('#characters h1');
@@ -74,6 +75,9 @@ export default function initTranslations() {
       navigationListItems.forEach((item, index) => {
         item.innerText = translations.pt[`navigationList${index}`];
       });
+      navigationListItemsHam.forEach((item, index) => {
+        item.innerText = translations.pt[`navigationList${index}`];
+      });
       aboutTexts.forEach((item, index) => {
         item.innerText = translations.pt[`about${index}`];
       });
@@ -90,6 +94,9 @@ export default function initTranslations() {
       languageOptionPt.childNodes[2].nodeValue = translations.en.languageOptionPt;
       languageOptionEn.childNodes[2].nodeValue = translations.en.languageOptionEn;  
       navigationListItems.forEach((item, index) => {
+        item.innerText = translations.en[`navigationList${index}`];
+      });
+      navigationListItemsHam.forEach((item, index) => {
         item.innerText = translations.en[`navigationList${index}`];
       });
       aboutTexts.forEach((item, index) => {
