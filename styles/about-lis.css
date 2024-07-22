@@ -32,3 +32,9 @@ main {
   flex-direction: column;
   gap: 6rem;
 }
+
+@media (max-width: 750px) {
+  h1 {
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+}

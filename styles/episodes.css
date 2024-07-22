@@ -22,6 +22,14 @@
 }
 
 @media (max-width: 750px) {
+  .games {
+    flex-direction: column;
+  }
+
+  .games li:last-child {
+    padding-bottom: 1rem;
+  }
+
   .games h3 {
     font-size: 1.5rem;
   }
