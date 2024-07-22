@@ -24,3 +24,19 @@ footer a:hover {
   animation: mouse-hover 1s infinite;
   cursor: var(--cursor-pointer);
 }
+
+@media (max-width: 715px) {
+  footer {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .social{
+    display: block;
+    align-items: center;
+  }
+
+  footer img {
+    padding-top: 2rem;
+  }
+}

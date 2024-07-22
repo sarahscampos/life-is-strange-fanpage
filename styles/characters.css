@@ -33,4 +33,16 @@
   .slider-wrapper .swiper-slide-button{
     display: none;
   }
+
+}
+
+@media (max-width: 1000px) {
+  .card-item img{
+    width: 100%;
+
+  }
+
+  .container {
+    width: 100%;
+  }
 }

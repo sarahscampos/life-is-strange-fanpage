@@ -20,3 +20,9 @@
 .games li:last-child {
   padding-bottom: 14rem;
 }
+
+@media (max-width: 750px) {
+  .games h3 {
+    font-size: 1.5rem;
+  }
+}

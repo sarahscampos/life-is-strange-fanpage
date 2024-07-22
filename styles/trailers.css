@@ -8,4 +8,19 @@
 
 .trailers-container iframe {
   border-radius: 5px;
+  width: 50%;
+  height: 400px;
+}
+
+@media (max-width: 850px) {
+  .trailers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trailers-container iframe {
+    width: 75%;
+    height: 300px;
+  }
+
 }

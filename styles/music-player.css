@@ -124,3 +124,9 @@
   width: 0%;
   transition: width 0.1s linear;
 }
+
+@media (max-width: 750px) {
+  .music-container {
+    display: none;
+  }
+}

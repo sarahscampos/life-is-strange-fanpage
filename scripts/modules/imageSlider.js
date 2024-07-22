@@ -2,7 +2,7 @@ export default function initSlider() {
 
   const swiper = new Swiper('.slider-wrapper', {
     loop: true,
-    spaceBetween: 120,
+    spaceBetween: 80,
   
     // If we need pagination
     pagination: {
