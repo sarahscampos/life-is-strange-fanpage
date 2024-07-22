@@ -1,6 +1,6 @@
 ![lis logo](https://github.com/user-attachments/assets/605bfd59-52f2-4df9-bf28-d04c47fb4ce3)
 # Fanpage de Life is Strange
-Conheça mais sobre o jogo Life is Strange (2015) e Life is Strange: Double Exposure acessando [esta página.](https://life-is-strange-fanpage.vercel.app/)
+Conheça mais sobre o jogo Life is Strange (2015) e Life is Strange: Double Exposure (2024) acessando [esta página.](https://life-is-strange-fanpage.vercel.app/)
 ## Funcionalidades
 
 * **Animação de "voltar no tempo" proporcional ao scroll da página**
