@@ -16,8 +16,7 @@ export default function initTranslations() {
       about3: 'À medida que Max navega nesta nova realidade, ela percebe que o assassino está planejando atacar novamente em ambos os mundos, iniciando uma emocionante corrida contra o tempo para deter o assassino e salvar sua amiga.',
       charactersTitle: 'Personagens',
       galleryTitle: 'Galeria de imagens',
-      episodesTitle: 'Episódios',
-      notReleased: 'Ainda não lançado (╥‸╥)', 
+      episodesTitle: 'Episódios', 
       footerCredits: 'Página de fã não oficial de Life is Strange. Todos os direitos reservados à Dontnod Entertainment, Deck Nine Games e Square Enix.',
       myMedia: 'Feito por Sarah Campos',
     },
@@ -39,7 +38,6 @@ export default function initTranslations() {
       charactersTitle: 'Characters',
       galleryTitle: 'Image gallery',
       episodesTitle: 'Episodes',
-      notReleased: 'Not released yet (╥‸╥)', 
       footerCredits: 'Unofficial fanpage of Life is Strange. All rights reserved to Dontnod Entertainment, Deck Nine Games and Square Enix.',
       myMedia: 'Made by Sarah Campos',
     }
@@ -57,7 +55,6 @@ export default function initTranslations() {
   let charactersTitle = document.querySelector('#characters h1');
   let galleryTitle = document.querySelector('#gallery h1');
   let episodesTitle = document.querySelector('#episodes h1');
-  let notReleased = document.getElementById("not-released");
   let credits = document.querySelector('footer p');
   let media = document.querySelector('footer .social p');
   
@@ -85,7 +82,6 @@ export default function initTranslations() {
       charactersTitle.innerText = translations.pt.charactersTitle;
       galleryTitle.innerText = translations.pt.galleryTitle;
       episodesTitle.innerText = translations.pt.episodesTitle;
-      notReleased.innerText = translations.pt.notReleased;
       credits.innerText = translations.pt.footerCredits;
       media.innerText = translations.pt.myMedia;
     }
@@ -106,7 +102,6 @@ export default function initTranslations() {
       charactersTitle.innerText = translations.en.charactersTitle;
       galleryTitle.innerText = translations.en.galleryTitle;
       episodesTitle.innerText = translations.en.episodesTitle;
-      notReleased.innerText = translations.en.notReleased;
       credits.innerText = translations.en.footerCredits;
       media.innerText = translations.en.myMedia;
     }
